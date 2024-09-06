@@ -1,0 +1,73 @@
+:root {
+    --blackback: #111111;
+    --purpleback: #7E00A4;
+    --goldback: #C69F00;
+    --whiteback: #DDDDDD;
+    --text1: #000000;
+    --purple: #310054;
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: "Libre Baskerville", serif; */
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--whiteback);
+}
+
+p{
+    color: var(--text);
+}
+
+h2{
+    color: var(--text);
+}
+
+/* main do site */
+main{
+    background-color: var(--blackback);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    gap: 10dvh;
+}
+
+/* tabela style */
+
+.tabelaMed{
+    margin: 0px 150px;
+}
+
+.tabelaMed h2{
+    color: var(--text1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: var(--purpleback);}
+  
+th {
+    background-color: var(--purple);
+    color: white;
+}
+
+/* botão voltar */
+main .voltar{
+    margin-top: 10px;
+}

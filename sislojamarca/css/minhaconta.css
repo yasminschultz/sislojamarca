@@ -1,0 +1,108 @@
+:root {
+    --blackback: #111111;
+    --purpleback: #7E00A4;
+    --goldback: #C69F00;
+    --whiteback: #DDDDDD;
+    --text1: #000000;
+    --purple: #310054;
+    --bronze: #CD7F32;
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: "Libre Baskerville", serif; */
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--whiteback);
+}
+
+p{
+    color: var(--text);
+}
+
+h2{
+    color: var(--text1);
+}
+
+main{
+    background-color: var(--blackback);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    gap: 10dvh;
+    margin-top: 10px;
+}
+
+.sair p a{
+    display: flex;
+    background-color: var(--purpleback);
+    color: var(--whiteback);
+    border-radius: 3px;
+    padding: 3px;
+
+}
+
+.usuario{
+    display: grid; /* Usando grid para organizar os formulários */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre as colunas */
+    max-width: 600px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total do contêiner */
+}
+
+.imguser .dadosuser {
+    flex: 1; /* Permite que ambas as divs ocupem espaço igual */
+    max-width: 300px; /* Largura máxima para cada div */
+}
+
+.dadosuser{
+    display: grid; /* Usando grid para organizar os formulários */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 0px; /* Espaçamento entre as colunas */
+    max-width: 600px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total do contêiner */
+}
+
+.part1 .part2 {
+    flex: 1; /* Permite que ambas as divs ocupem espaço igual */
+}
+
+.part1 p{
+    width: 100px;
+    padding-right: 100px;
+}
+
+.part2 p{
+    width: 100px;
+    padding-right: 100px;
+}
+
+.dadosuser p{
+    font-family: "Roboto Mono", monospace;
+    color: var(--whiteback);
+    background-color: #310054;
+    border-radius: 3px;
+    margin-right: 10px ;
+}
+
+.MaisCadastros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.main1 main{
+    height: 0px;
+}
+
+.main1 main h2{
+    color: var(--text1);
+}

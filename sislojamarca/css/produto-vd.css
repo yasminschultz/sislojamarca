@@ -1,0 +1,127 @@
+:root {
+    --blackback: #111111;
+    --purpleback: #7E00A4;
+    --goldback: #C69F00;
+    --whiteback: #DDDDDD;
+    --text1: #000000;
+    --purple: #310054;
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: "Libre Baskerville", serif; */
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--whiteback);
+    background-size: cover;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+}
+
+.imgback img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+
+p{
+    color: var(--text1);
+}
+
+h3{
+    color: var(--text1);
+    margin-top: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50dvh;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    width: 500px;
+    font-size: 17px;
+}
+
+input, select{
+    width: 100%; /* Faz com que os campos de entrada ocupem toda a largura disponÃƒÂ­vel */
+    padding: 0px ; /* EspaÃƒÂ§amento interno dos campos de entrada */
+    border: 0px solid var(--purple); /* Borda padrÃƒÂ£o */
+    border-radius: 4px; /* Bordas arredondadas */
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(56, 39, 56);
+    color: var(--whiteback);
+    margin-top: 2dvh;
+    margin-bottom: -1dvh;
+}
+
+option {
+color: var(--whiteback);
+background-color: var(--blackback);
+padding: 5px;
+}
+
+select p{
+    color: var(--whiteback);
+}
+
+label {
+    display: block;
+    margin-bottom: -10px;
+}
+
+input[type="submit"] {
+    width: auto; /* Largura automÃ¡tica para o botÃ£o de envio */
+    background-color: var(--blackback); /* Cor de fundo do botÃ£o */
+    color: var(--whiteback); /* Cor do texto do botÃ£o */
+    border: none; /* Remove a borda padrÃ£o */
+    padding: 0px 30px; /* EspaÃ§amento interno do botÃ£o */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botÃ£o */
+}
+
+input[type="submit"]:hover {
+    background-color: var(--goldback); /* Cor do botÃ£o ao passar o mouse */
+}
+
+.for form label{
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--purpleback);
+    gap: 5px;
+    padding: 10px 2px;
+    border-radius: 1px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--whiteback);
+}
+
+.voltar{
+    margin-top: 20px;
+}
+
+.voltar a{
+    color: var(--text1);
+}
